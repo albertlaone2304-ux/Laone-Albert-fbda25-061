@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Reservations | Blue Tide Seafood Restaurant</title>
+  <meta name="description" content="Get in touch with Blue Tide Seafood Restaurant and reserve your table — address, phone, hours and booking form all in one place.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bt-navbar" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand bt-brand" href="index.html">
+          <svg class="bt-logo" width="42" height="42" viewBox="0 0 100 100" role="img" aria-label="Blue Tide Seafood Restaurant logo: a fish, ocean wave and fork">
+            <title>Blue Tide Seafood Restaurant logo</title>
+            <circle cx="50" cy="50" r="48" class="bt-logo-bg"/>
+            <path class="bt-logo-fish" d="M25 55 C25 40 42 32 58 40 L70 32 L67 45 L70 50 L67 55 L70 68 L58 60 C42 68 25 70 25 55 Z"/>
+            <circle cx="34" cy="49" r="2.4" class="bt-logo-eye"/>
+            <path class="bt-logo-wave" d="M14 74 C22 68 30 68 38 74 C46 80 54 80 62 74 C70 68 78 68 86 74" fill="none" stroke-width="4" stroke-linecap="round"/>
+            <path class="bt-logo-fork" d="M50 14 L50 30 M45 14 L45 24 M55 14 L55 24 M45 24 C45 28 55 28 55 24" fill="none" stroke-width="2.6" stroke-linecap="round"/>
+          </svg>
+          <span>Blue Tide</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn bt-btn-accent" href="#reservationForm">Reserve Table</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bt-section-primary py-5">
+      <div class="container text-center">
+        <p class="bt-eyebrow bt-eyebrow-light">Get in Touch</p>
+        <h1 class="bt-section-title-light">Contact Us &amp; Reserve a Table</h1>
+      </div>
+    </section>
+
+    <section class="bt-section" id="reservationForm">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+
+          <!-- CONTACT INFO -->
+          <div class="col-lg-4">
+            <div class="bt-form-card h-100">
+              <p class="bt-eyebrow">Contact Details</p>
+              <h2 class="h4 bt-card-title mb-4">Find Us &amp; Reach Out</h2>
+
+              <div class="bt-contact-item mb-4">
+                <i class="bi bi-geo-alt-fill bt-card-icon" aria-hidden="true"></i>
+                <h3 class="h6 bt-footer-heading">Address</h3>
+                <address class="bt-card-text mb-0">12 Harbour Lane, Gaborone, Botswana</address>
+              </div>
+
+              <div class="bt-contact-item mb-4">
+                <i class="bi bi-telephone-fill bt-card-icon" aria-hidden="true"></i>
+                <h3 class="h6 bt-footer-heading">Phone</h3>
+                <p class="bt-card-text mb-0"><a href="tel:+2673900000">+267 390 0000</a></p>
+              </div>
+
+              <div class="bt-contact-item mb-4">
+                <i class="bi bi-envelope-fill bt-card-icon" aria-hidden="true"></i>
+                <h3 class="h6 bt-footer-heading">Email</h3>
+                <p class="bt-card-text mb-0"><a href="mailto:hello@bluetideseafood.com">hello@bluetideseafood.com</a></p>
+              </div>
+
+              <div class="bt-contact-item">
+                <i class="bi bi-clock-fill bt-card-icon" aria-hidden="true"></i>
+                <h3 class="h6 bt-footer-heading">Opening Hours</h3>
+                <p class="bt-card-text mb-0">
+                  Mon – Thu: 11:00 – 22:00<br>
+                  Fri – Sat: 11:00 – 23:30<br>
+                  Sunday: 11:00 – 21:00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RESERVATION FORM -->
+          <div class="col-lg-8">
+            <div class="bt-form-card">
+              <p class="bt-eyebrow">Book a Table</p>
+              <h2 class="h4 bt-card-title mb-4">Reserve Your Table</h2>
+
+              <form id="feedbackForm" novalidate>
+
+                <div class="row g-4">
+
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fullName"
+                      name="fullName"
+                      placeholder="e.g. Naledi Kgosi"
+                      maxlength="80"
+                      required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="you@example.com"
+                      required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      placeholder="e.g. 267 71 234 567"
+                      pattern="[0-9\s\+\-]{7,15}"
+                      required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="reservationDate" class="form-label">Reservation Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="reservationDate"
+                      name="reservationDate"
+                      required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="guests" class="form-label">Number of Guests</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="guests"
+                      name="guests"
+                      min="1"
+                      max="20"
+                      placeholder="e.g. 2"
+                      required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="favouriteDish" class="form-label">Occasion (optional)</label>
+                    <select class="form-select" id="favouriteDish" name="occasion">
+                      <option value="" selected>None in particular</option>
+                      <option value="Birthday">Birthday</option>
+                      <option value="Anniversary">Anniversary</option>
+                      <option value="Business Dinner">Business Dinner</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="comments" class="form-label">Special Requests</label>
+                    <textarea
+                      class="form-control"
+                      id="comments"
+                      name="comments"
+                      rows="3"
+                      maxlength="500"
+                      placeholder="Dietary needs, seating preference, or anything else we should know..."></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-lg bt-btn-accent">Reserve Table</button>
+                  </div>
+
+                </div>
+              </form>
+
+              <div id="formConfirmation" class="bt-form-confirmation"></div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bt-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a class="bt-brand bt-brand-footer" href="index.html">
+            <svg class="bt-logo bt-logo-light" width="38" height="38" viewBox="0 0 100 100" role="img" aria-label="Blue Tide Seafood Restaurant logo">
+              <title>Blue Tide Seafood Restaurant logo</title>
+              <circle cx="50" cy="50" r="48" class="bt-logo-bg"/>
+              <path class="bt-logo-fish" d="M25 55 C25 40 42 32 58 40 L70 32 L67 45 L70 50 L67 55 L70 68 L58 60 C42 68 25 70 25 55 Z"/>
+              <circle cx="34" cy="49" r="2.4" class="bt-logo-eye"/>
+              <path class="bt-logo-wave" d="M14 74 C22 68 30 68 38 74 C46 80 54 80 62 74 C70 68 78 68 86 74" fill="none" stroke-width="4" stroke-linecap="round"/>
+              <path class="bt-logo-fork" d="M50 14 L50 30 M45 14 L45 24 M55 14 L55 24 M45 24 C45 28 55 28 55 24" fill="none" stroke-width="2.6" stroke-linecap="round"/>
+            </svg>
+            <span>Blue Tide</span>
+          </a>
+          <p class="bt-footer-tagline">Fresh from the Ocean to Your Table.</p>
+          <div class="bt-social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h6 bt-footer-heading">Visit Us</h3>
+          <address class="bt-footer-text">
+            12 Harbour Lane, Gaborone, Botswana<br>
+            <a href="tel:+2673900000">+267 390 0000</a><br>
+            <a href="mailto:hello@bluetideseafood.com">hello@bluetideseafood.com</a>
+          </address>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h6 bt-footer-heading">Opening Hours</h3>
+          <p class="bt-footer-text">
+            Mon – Thu: 11:00 – 22:00<br>
+            Fri – Sat: 11:00 – 23:30<br>
+            Sunday: 11:00 – 21:00
+          </p>
+        </div>
+      </div>
+      <hr class="bt-footer-rule">
+      <p class="bt-footer-copy">&copy; 2026 Blue Tide Seafood Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="bt-back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
